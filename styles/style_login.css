@@ -28,6 +28,10 @@ header {
   transform: translate(0%, -50%);
 }
 
+header h1 {
+  font-variant: small-caps;
+}
+
 main {
   background-color: #fff;
 
@@ -89,4 +93,19 @@ a {
 
 label {
   color: gray;
+}
+
+@media (max-width: 600px) {
+  main {
+    transform: translate(-50%, -30%);
+    border-radius: 0px 0px 10px 10px;
+
+  }
+
+  header {
+    height: 100px;
+    transform: translate(-50%, -175%);
+    border-radius: 10px 10px 0px 0px;
+  }
+
 }

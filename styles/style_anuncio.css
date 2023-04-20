@@ -29,6 +29,10 @@ a {
   color: #fff;
 }
 
+p {
+  text-align: justify;
+}
+
 header {
   display: flex;
   justify-content: space-evenly;
@@ -37,6 +41,10 @@ header {
 
 header div {
   line-height: 0.5;
+}
+
+header h1 {
+  font-variant: small-caps;
 }
 
 nav form {
@@ -113,8 +121,22 @@ button:hover {
   grid-area: D;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 600px) {
   body {
-    width: 50%;
+    width: 90%;
+  }
+
+  #paginaInicial {
+    gap: 4px 200px;
+  }
+
+  #anuncio #imgPrincipal {
+    width: 200px;
+    height: 200px;
+  }
+
+  #anuncio #galeria img {
+    width: 70px;
+    height: 70px;
   }
 }
